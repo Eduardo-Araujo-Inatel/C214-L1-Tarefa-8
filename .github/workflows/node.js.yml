@@ -32,6 +32,7 @@ jobs:
     - run: cd dist
     - run: tar -czvf ./../build.tar.gz ./
     - run: cd ..
+    - run: ls
 
     # Upload do artefato de build
     - uses: actions/upload-artifact@v1
