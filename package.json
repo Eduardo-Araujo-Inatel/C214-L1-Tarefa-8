@@ -4,6 +4,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "build": "gulp build",
     "test": "jest --detectOpenHandles --testEnvironment=node --runInBand --coverage --forceExit"
   },
   "license": "MIT",
@@ -16,6 +17,8 @@
     "validate.js": "^0.13.1"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "jest": "^29.5.0"
   }
 }
