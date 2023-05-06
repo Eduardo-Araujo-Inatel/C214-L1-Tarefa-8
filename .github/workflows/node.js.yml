@@ -29,12 +29,8 @@ jobs:
     
     # Build de projeto
     - run: npm i
-    - run: npm run build
-    - run: cd dist
     - run: ls
-    - run: tar -czvf ./../build.tar.gz ./
-    - run: ls
-    - run: cd ./..
+    - run: tar -czvf build.tar.gz ./
     - run: ls
 
 
