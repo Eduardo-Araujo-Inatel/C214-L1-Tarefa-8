@@ -30,12 +30,9 @@ jobs:
     # Build de projeto
     - run: npm i
     - run: npm run build
-    - run: tar -czvf build.tar.gz ./dist/*
-    - run: ls
-
 
     # Upload do artefato de build
     - uses: actions/upload-artifact@v1
       with:
         name: build
-        path: ./build.tar.gz
+        path: ./dist
