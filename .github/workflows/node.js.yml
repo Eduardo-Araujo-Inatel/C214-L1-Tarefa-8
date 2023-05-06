@@ -29,8 +29,8 @@ jobs:
     
     # Build de projeto
     - run: npm i
-    - run: ls
-    - run: tar -czvf build.tar.gz ./
+    - run: npm run build
+    - run: tar -czvf build.tar.gz ./dist/*
     - run: ls
 
 
