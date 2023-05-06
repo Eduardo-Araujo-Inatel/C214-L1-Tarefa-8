@@ -33,7 +33,8 @@ jobs:
     - run: cd dist
     - run: ls
     - run: tar -czvf ./../build.tar.gz ./
-    - run: cd ..
+    - run: ls
+    - run: cd ./..
     - run: ls
 
 
