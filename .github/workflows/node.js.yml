@@ -22,6 +22,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    needs: test
     
     steps:
     - uses: actions/checkout@v3
@@ -29,10 +30,11 @@ jobs:
     # Build de projeto
     - run: npm i
     - run: npm run build
+    - run: ls
     - run: cd dist
+    - run: ls
     - run: tar -czvf ./../build.tar.gz ./
     - run: cd ..
-    - run: ls
 
     # Upload do artefato de build
     - uses: actions/upload-artifact@v1
