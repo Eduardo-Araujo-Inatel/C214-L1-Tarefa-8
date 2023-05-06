@@ -22,7 +22,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    # needs: test
+    needs: test
     
     steps:
     - uses: actions/checkout@v3
@@ -34,5 +34,5 @@ jobs:
     # Upload do artefato de build
     - uses: actions/upload-artifact@v1
       with:
-        name: build.zip
+        name: build
         path: ./dist
