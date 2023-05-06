@@ -1,4 +1,5 @@
 # C214 - T8
+[![Tarefa 8](https://github.com/Eduardo-Araujo-Inatel/C214-L1-Tarefa-8/actions/workflows/node.js.yml/badge.svg)](https://github.com/Eduardo-Araujo-Inatel/C214-L1-Tarefa-8/actions/workflows/node.js.yml)
 
 Implementação de CRUD em `Javascript` usando a biblioteca `Mongoose` para interagir com um banco de dados `MongoDB`.
 
